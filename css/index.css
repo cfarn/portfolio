@@ -1,0 +1,147 @@
+/* style index.html */
+
+#container {
+    width: 80%;
+    padding: 5% 0;
+    margin: 0 auto;
+    background-color: #c9d6df;
+    display: flex;
+    flex-direction: column;
+}
+
+#titre2 {
+    align-self: center;
+    text-align: center;
+    text-transform: capitalize;
+    border: #52616b solid 5px;
+    color: #52616b;
+    background-color: #f0f5f9;
+    width: 320px;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+#btnTitre2 {
+    align-self: center;
+    margin-bottom: 5%;
+    cursor: pointer;
+    color: #c9d6df;
+    background-color: #52616b;
+    border-radius: 20px;
+    padding: 0.5em;
+}
+
+#section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-bottom: 5%;
+    min-height: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+    box-shadow: 5px 5px 15px #000;
+}
+
+.overlayText{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    text-align: center;
+    padding-top: 20%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.6s ease 0s;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titre3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.card:hover .overlayText {
+    opacity: 1;
+}
+
+.technos {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.titre4, .technos p {
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.technos p {
+    font-size: 1em;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 376px) {
+    #container {
+        width: 90%;
+    }
+
+    #titre2 {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 5%;
+        height: 300px;
+    }
+
+    #section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 377px) and (max-width: 768px) {
+    #container {
+        width: 90%;
+    }
+
+    #titre2 {
+        margin-bottom: 10%;
+    }
+    .card {
+        width: 90%;
+        height: 350px;
+    }
+
+    #section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.fa-search-plus {
+    color: #fff;
+}
